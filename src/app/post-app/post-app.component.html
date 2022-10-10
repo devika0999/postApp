@@ -1,4 +1,11 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
 <app-navbar></app-navbar>
+        </div>
+    </div>
+</div>
 <br>
 <div class="container">
     <div class="row">
@@ -9,13 +16,15 @@
                     <tr>
                         <th scope="col">ID </th>
                         <th scope="col">TITLE</th>
-                        <th scope="col">STATUS</th>
+                        <th scope="col">BODY</th>
+                        
                     </tr>
                 </thead>
                 <tbody>
                     <tr *ngFor="let i of postappdata">
                         <td>{{i.id}}</td>
                         <td>{{i.title}}</td>
+                        <td>{{i.body}}</td>
                         
                     </tr>
                 </tbody>
